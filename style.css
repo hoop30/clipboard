@@ -157,3 +157,27 @@ h2 {
     margin-bottom: 50px;
     width: 690px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f6f8;
+    height: 150px;
+}
+.footer-logo {
+    height: 60px;
+    width: 60px;
+}
+.footer-nav {
+    display: grid;
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: 40px 40px;
+    align-items: center;
+}
+.footer-nav p {
+    text-align: start;
+}
+.social a {
+    margin: 0 10px;
+}

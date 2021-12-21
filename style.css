@@ -20,6 +20,8 @@ h1, h2 {
 p {
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 50px;
+    width: 690px;
 }
 h1 {
     font-size: 43px;
@@ -46,10 +48,6 @@ h2 {
     margin-top: 100px;
     margin-bottom: 65px;
 }
-.txt-clipboard {
-    margin-bottom: 50px;
-    width: 690px;
-}
 
 .dl {
     display: flex;
@@ -58,6 +56,7 @@ h2 {
     margin-bottom: 160px;
 }
 .dl p {
+    width: 315px;
     border-radius: 50px;
     padding: 20px 40px;
     margin: 0 8px;
@@ -73,11 +72,6 @@ h2 {
 .dl p:last-child {
     background-color: hsl(233, 100%, 69%);
     box-shadow: rgba(5, 5, 5,0.3) 0px -3px 0px 0px inset, hsla(233, 100%, 69%, 30%)0px 10px 20px 5px;
-}
-
-.txt-clipboard2 {
-    margin-bottom: 80px;
-    width: 700px;
 }
 
 .computer {
@@ -110,10 +104,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.txt-whether {
-    margin-bottom: 100px;
-    width: 690px;
-}
 .img-devices {
     margin-bottom: 80px;
 }
@@ -153,10 +143,6 @@ h2 {
     width: 1130px;
 }
 
-.txt-available {
-    margin-bottom: 50px;
-    width: 690px;
-}
 
 footer {
     display: flex;
@@ -180,4 +166,79 @@ footer {
 }
 .social a {
     margin: 0 10px;
+}
+
+@media screen and (max-width: 1160px) {
+    .logo {
+        flex-direction: column;
+        margin-bottom: 110px;
+    }
+    .logo img {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .icone {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .icone-child {
+        margin-bottom: 60px;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .footer-logo {
+        margin-top: 50px;
+    }
+    .footer-logo, .footer-nav, .social {
+        margin-bottom: 50px;
+    }
+    .img-devices {
+        width: 90vw;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .dl {
+        flex-direction: column;
+    }
+    .dl p:first-child {
+        margin-bottom: 24px;
+    }
+    .computer {
+        flex-direction: column;
+        position: unset;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    .computer img {
+        width: 110vw;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .computer-txt {
+        justify-content: center;
+        height: fit-content;
+    }
+    .computer-txt p {
+        margin-bottom: 50px;
+    }
+    h1, h2, p {
+        width: 80vw;
+    }
+    .footer-nav {
+        grid-template-columns: 200px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        text-align: center;
+    }
+    .footer-nav p {
+        text-align: center;
+        width: 200px;
+        margin: 0;
+    }
 }

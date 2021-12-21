@@ -56,22 +56,28 @@ h2 {
     margin-bottom: 160px;
 }
 .dl p {
+    color: white;
     width: 315px;
     border-radius: 50px;
     padding: 20px 40px;
-    margin: 0 8px;
+    margin: 0;
     box-shadow: rgba(5, 5, 5,0.3) 0px -3px 0px 0px inset, hsla(171, 66%, 44%, 30%)0px 10px 20px 5px;
 }
 .dl a {
-    color: white;
+    border-radius: 50px;
+    margin: 0 8px;
 }
-.dl p:first-child {
+.dl a:first-child {
     background-color: hsl(171, 66%, 44%);
     box-shadow: rgba(5, 5, 5,0.3) 0px -3px 0px 0px inset, hsla(171, 66%, 44%, 30%)0px 10px 20px 5px;
 }
-.dl p:last-child {
+.dl a:last-child {
     background-color: hsl(233, 100%, 69%);
     box-shadow: rgba(5, 5, 5,0.3) 0px -3px 0px 0px inset, hsla(233, 100%, 69%, 30%)0px 10px 20px 5px;
+}
+.dl a:hover {
+    opacity: 70%;
+    cursor: url(images/cursor.png), pointer;
 }
 
 .computer {
@@ -164,8 +170,16 @@ footer {
 .footer-nav p {
     text-align: start;
 }
+.footer-nav a:hover{
+    cursor: url(images/cursor.png), pointer;
+    color: hsl(171, 66%, 44%);
+}
 .social a {
     margin: 0 10px;
+}
+.social a:hover {
+    cursor: url(images/cursor.png), pointer;
+    filter: invert(63%) sepia(68%) saturate(452%) hue-rotate(122deg) brightness(85%) contrast(89%);
 }
 
 @media screen and (max-width: 1160px) {
@@ -207,7 +221,7 @@ footer {
     .dl {
         flex-direction: column;
     }
-    .dl p:first-child {
+    .dl a:first-child {
         margin-bottom: 24px;
     }
     .computer {
